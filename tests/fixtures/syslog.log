@@ -1,0 +1,6 @@
+Mar  8 12:00:00 webserver sshd[1234]: Accepted publickey for deploy from 10.0.0.1 port 22
+Mar  8 12:00:01 webserver systemd[1]: Started nginx.service
+Mar  8 12:00:02 webserver kernel: [12345.678] TCP: out of memory
+Mar  8 12:00:03 webserver app[5678]: INFO: Request processed successfully
+Mar  8 12:00:04 webserver app[5678]: ERROR: Failed to connect to database
+Mar  8 12:00:05 webserver cron[9012]: job /etc/cron.hourly/backup completed
