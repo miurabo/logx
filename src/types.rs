@@ -53,6 +53,7 @@ impl fmt::Display for LogLevel {
 
 /// パース済みの1行分のログデータ
 #[derive(Debug, Clone, Default)]
+#[allow(dead_code)]
 pub struct LogEntry {
     pub raw: String,
     pub timestamp: Option<DateTime<FixedOffset>>,
@@ -65,8 +66,18 @@ pub struct LogEntry {
     pub line_number: usize,
 }
 
+/// エラーサマリー（エラー種別ごとの集計）
+#[derive(Debug, Clone)]
+pub struct ErrorSummary {
+    pub category: String,
+    pub count: usize,
+    pub first_seen: Option<DateTime<FixedOffset>>,
+    pub last_seen: Option<DateTime<FixedOffset>>,
+}
+
 /// フォーマット自動検出の結果
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct DetectionResult {
     pub format: LogFormat,
     pub confidence: f64,
