@@ -1,0 +1,20 @@
+# ビルド成果物
+/target/
+
+# IDE設定
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS固有
+.DS_Store
+
+# 環境変数
+.env
+
+# Claude Code設定
+.claude/
+
+# markdownlint cache
+.rumdl_cache/
