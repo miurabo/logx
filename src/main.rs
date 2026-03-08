@@ -1,10 +1,9 @@
-// F2〜F4で使用する基盤モジュール（現時点ではCLIから未参照）
-#![allow(dead_code)]
-
+mod analyzer;
 mod cli;
 mod detector;
 mod error;
 mod parser;
+mod renderer;
 mod types;
 
 fn main() {
